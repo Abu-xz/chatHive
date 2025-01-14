@@ -15,7 +15,7 @@ messageForm.addEventListener("submit", (e) => {
 });
 
 socket.on("client-total", (data) => {
-  clientTotal.innerText = `Total Client: ${data}`;
+  clientTotal.innerText = `Online ${data}`;
 });
 
 function sendMessage() {
@@ -42,7 +42,7 @@ function addMessageToUi(isOwnMessage, data) {
             <li class="${isOwnMessage ? "message-right" : "message-left"}">
               <p class="message">
                 ${data.message}
-                <span>${data.name} ● ${moment(data.dateTime).fromNow()}</span>
+                <span><strong style="color: ${isOwnMessage ? '#0C1844' : '#0C1844'};">${data.name} </strong> ● ${moment(data.dateTime).fromNow()}</span>
               </p>
             </li>`;
 

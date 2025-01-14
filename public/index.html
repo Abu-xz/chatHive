@@ -32,31 +32,32 @@
               type="text"
               class="name-input"
               id="name-input"
-              value="Anonymous"
+              value="Johnny"
               maxlength="20"
             />
+              <p class="client-total" id="client-total">Online 2</p>
           </div>
 
           <div class="display-container">
             <ul class="message-container" id="message-container">
               <li class="message-left" >
-              <p class="message">
-                My first message
-                <span>username ● 14 January 9:00</span>
+              <p class="message" >
+                This is your last warning, Deadpool
+                <span><strong style="color:#0C1844;">Wolverine </strong>  ● 26 July 9:00</span>
               </p>
             </li>
 
             <li class="message-right">
               <p class="message">
-                My second message
-                <span>Anonymous ● 14 January 10:02</span>
+                Ooh, so scary. Are you gonna give me the claws or the cold stare first?
+                <span><strong style="color: #0C1844;">Deadpool </strong>  ● 26 July 10:02</span>
               </p>
             </li>
 
             <li class="message-feedback">
-              <p class="feedback" id="feedback">someone is typing...</p>
+              <p class="feedback" id="feedback">✍🏻Anonymous is typing a message...</p>
             </li>
-            
+ 
           </ul>
         </div>
 
@@ -67,7 +68,7 @@
                 name="message"
                 class="message-input"
                 id="message-input"
-                placeholder="Write a message"
+                placeholder="Write a message..."
               />
               <button type="submit" class="send-button">
                 Send
@@ -80,9 +81,7 @@
         </section>
       </main>
 
-      <section id="display-client">
-        <h3 class="client-total" id="client-total">Total Client: 2</h3>
-      </section>
+      
     </div>
 
     <script src="/socket.io/socket.io.js"></script>
